@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="kuOpenCVUWPTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:kuOpenCVUWPTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBlock x:Name="TextBlockA" HorizontalAlignment="Left" Margin="34,24,0,0" 
+                   TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Height="30" Width="15"/>
+        <TextBox x:Name="TextBoxA" HorizontalAlignment="Left" Margin="62,24,0,0" 
+                 Height="30" Width="50"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="TextBlockB" HorizontalAlignment="Left" Margin="151,24,0,0" 
+                   TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Height="30" Width="15"/>
+        <TextBox x:Name="TextBoxB" HorizontalAlignment="Left" Margin="182,24,0,0" 
+                 Height="30" Width="50"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <Button x:Name="RunMethodBtn" Content="Run Method" Margin="34,75,0,0" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="30" Width="120" Click="RunMethodBtn_Click"/>
+
+        <TextBlock x:Name="DisplayText" HorizontalAlignment="Left" Margin="34,127,0,0" TextWrapping="Wrap" Text="C:" VerticalAlignment="Top" Width="300"/>
+
+    </Grid>
+</Page>
