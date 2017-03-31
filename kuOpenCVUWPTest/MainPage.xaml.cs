@@ -47,36 +47,27 @@ namespace kuOpenCVUWPTest
                 List<double> bbVec = new List<double>();
                 List<double> ccVec = new List<double>();
 
-                aaVec.Add(75.0);
-                aaVec.Add(255.0);
-                aaVec.Add(75.0);
-                aaVec.Add(75.0);
-                aaVec.Add(255.0);
-                aaVec.Add(75.0);
-                aaVec.Add(225.0);
-                aaVec.Add(225.0);
+                aaVec.Add(75.0);    aaVec.Add(255.0);
+                aaVec.Add(75.0);    aaVec.Add(75.0);
+                aaVec.Add(255.0);   aaVec.Add(75.0);
+                aaVec.Add(225.0);   aaVec.Add(225.0);
 
-                bbVec.Add(159.0);
-                bbVec.Add(243.5);
-                bbVec.Add(162.0);
-                bbVec.Add(133.0);
-                bbVec.Add(261.0);
-                bbVec.Add(129.0);
-                bbVec.Add(243.5);
-                bbVec.Add(222.5);
+                bbVec.Add(159.0);   bbVec.Add(243.5);
+                bbVec.Add(162.0);   bbVec.Add(133.0);
+                bbVec.Add(261.0);   bbVec.Add(129.0);
+                bbVec.Add(243.5);   bbVec.Add(222.5);
 
                 bool cc = SharpWrapper.kuCalHomographySharp(aaVec, bbVec);
 
-                ccVec.Add(40.0); ccVec.Add(290.0);
-                ccVec.Add(40.0); ccVec.Add(40.0);
+                ccVec.Add(40.0);  ccVec.Add(290.0);
+                ccVec.Add(40.0);  ccVec.Add(40.0);
                 ccVec.Add(290.0); ccVec.Add(40.0);
                 ccVec.Add(290.0); ccVec.Add(290.0);
 
                 var dd = SharpWrapper.kuPerspectiveTransformSharp(ccVec);
 
-                DisplayText.Text += ", kuCalHomographySharp result: "
-                                 + cc.ToString()
-                                 + ", dd:" + dd.Count.ToString() + "\n";
+                DisplayText.Text += ", kuCalHomographySharp result: " + cc.ToString()
+                                 + ", dd: " + dd.Count.ToString() + "\n";
 
                 foreach (var item in dd)
                 {

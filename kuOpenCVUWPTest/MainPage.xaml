@@ -25,7 +25,7 @@
                 HorizontalAlignment="Left" VerticalAlignment="Top" 
                 Height="30" Width="120" Click="RunMethodBtn_Click"/>
 
-        <TextBlock x:Name="DisplayText" HorizontalAlignment="Left" Margin="34,127,0,0" TextWrapping="Wrap" Text="C:" VerticalAlignment="Top" Width="300"/>
+        <TextBlock x:Name="DisplayText" HorizontalAlignment="Left" Margin="10,127,0,0" TextWrapping="Wrap" Text="C:" VerticalAlignment="Top" Width="340"/>
 
     </Grid>
 </Page>
